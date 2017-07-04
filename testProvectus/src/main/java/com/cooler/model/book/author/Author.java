@@ -20,7 +20,7 @@ public class Author implements Serializable{
     private String lastName;
     private Set<Book> bookSet = new HashSet<Book>();
 
-    protected Author(){}
+    public Author(){}
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

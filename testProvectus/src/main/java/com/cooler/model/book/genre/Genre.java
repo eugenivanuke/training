@@ -19,7 +19,7 @@ public class Genre implements Serializable{
     private String genreName;
     private Set<Book> bookSet = new HashSet<Book>();
 
-    protected Genre(){}
+    public Genre(){}
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

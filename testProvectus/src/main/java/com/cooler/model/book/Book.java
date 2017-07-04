@@ -26,9 +26,13 @@ public class Book implements Serializable {
     private BigDecimal price;
     private Customer customer;
 
-    protected Book(){}
+    public Book(){}
 
-    public Book(String title, String description, Author author, Genre genre, BigDecimal price) {}
+    public Book(String title, String description, Author author, Genre genre, BigDecimal price) {
+        Set<Author> authors = new HashSet<Author>();
+        authors.add(author);
+        this.authorSet = authors;
+    }
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

@@ -22,7 +22,7 @@ public class Customer implements Serializable {
     public Set<Book> bookSet = new HashSet<Book>();
     public Integer booksQuantity;
 
-    protected Customer(){}
+    public Customer(){}
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
