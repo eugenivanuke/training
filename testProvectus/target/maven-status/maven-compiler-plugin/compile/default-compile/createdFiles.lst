@@ -3,10 +3,8 @@ com\cooler\Application.class
 com\cooler\controller\AdminToolsController.class
 com\cooler\controller\HomeController.class
 com\cooler\model\book\author\Author.class
-com\cooler\model\book\genre\GenreRepo.class
 com\cooler\model\book\BookRepo.class
 com\cooler\controller\BookListController.class
-com\cooler\model\book\author\AuthorRepo.class
 com\cooler\model\customer\CustomerRepo.class
 com\cooler\model\book\AdminBookRepo.class
 com\cooler\model\book\Book.class

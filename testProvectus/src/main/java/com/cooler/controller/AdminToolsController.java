@@ -1,6 +1,8 @@
 package com.cooler.controller;
 
 import com.cooler.model.book.Book;
+import com.cooler.model.book.author.Author;
+import com.cooler.model.book.genre.Genre;
 import com.cooler.service.AdminToolsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -24,13 +26,13 @@ public class AdminToolsController {
 
     @RequestMapping(method = RequestMethod.GET, value = "/admintools")
     public String showAdminTools(Model model) {
-        model.addAttribute(new Book());
+        model.addAttribute(adminToolsService.createBook());
         return "admintools";
     }
 
     @RequestMapping(method = RequestMethod.POST, value = "/admintools")
     public String saveBook(Book book) {
-        adminToolsService.saveBook(book);
+        adminToolsService.save(book);
         return "booklist";
     }
 

@@ -28,14 +28,6 @@ public class Book implements Serializable {
 
     public Book(){}
 
-    public Book(String title, String description, Author author, Genre genre, BigDecimal price) {
-        this.setTitle(title);
-        this.setDescription(description);
-        authorSet.add(author);
-        genreSet.add(genre);
-        this.setPrice(price);
-    }
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     public Long getId() {

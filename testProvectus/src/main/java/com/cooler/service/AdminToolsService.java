@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
+import java.util.Set;
 
 /**
  * Created by clr on 04.07.2017.
@@ -23,7 +24,14 @@ public class AdminToolsService {
         this.adminBookRepo = adminBookRepo;
     }
 
-    public void saveBook(Book book) {
+    public Book createBook() {
+        Book book = new Book();
+        book.getGenreSet().add(new Genre());
+        book.getAuthorSet().add(new Author());
+        return book;
+    }
+
+    public void save(Book book) {
         adminBookRepo.save(book);
     }
 

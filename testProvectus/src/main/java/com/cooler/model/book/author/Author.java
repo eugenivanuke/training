@@ -51,6 +51,9 @@ public class Author implements Serializable{
     }
 
     @ManyToMany
+    @JoinTable(name = "book_author",
+                joinColumns = @JoinColumn(name="author_id"),
+                inverseJoinColumns = @JoinColumn(name="book_id"))
     public Set<Book> getBookSet() {
         return bookSet;
     }
