@@ -1,0 +1,4 @@
+com\cooler\Application.class
+com\cooler\model\User.class
+com\cooler\controller\FormController.class
+com\cooler\service\FormToMailService.class

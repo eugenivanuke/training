@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Регистрация</title>
+    <link rel="stylesheet" type="text/css" href="css\error.css" />
+    <link rel="stylesheet" type="text/css" href="css\styles.css" />
+</head>
+<body>
+<div class="testbox">
+    <h1>Регистрация</h1>
+    <form method="POST" th:object="${user}">
+        <hr/>
+        <div class="errors" th:if="${#fields.hasErrors('*')}">
+            <ul>
+                <li th:each="err : ${#fields.errors('*')}"
+                    th:text="${err}">Input is incorrect</li>
+            </ul>
+        </div>
+
+        <label th:class="${#fields.hasErrors('firstName')}? 'error'"></label>
+        <input type="text" th:field="*{firstName}"
+               th:class="${#fields.hasErrors('firstName')}? 'error'"
+               name="name" id="name" placeholder="Имя"/><br/>
+
+        <label th:class="${#fields.hasErrors('lastName')}? 'error'"></label>
+        <input type="text" th:field="*{lastName}"
+               th:class="${#fields.hasErrors('lastName')}? 'error'"
+                name="name" id="name" placeholder="Фамилия"/><br/>
+
+        <label th:class="${#fields.hasErrors('telNumber')}? 'error'"></label>
+        <input type="text" th:field="*{telNumber}"
+               th:class="${#fields.hasErrors('telNumber')}? 'error'"
+                name="name" id="name" placeholder="Телефон"/><br/>
+
+        <input type="submit" value="Register" />
+    </form>
+</div>
+</body>
+</html>

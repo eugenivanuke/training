@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Регистрация</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"
+            ></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="well well-sm">
+                <form class="form-horizontal" method="POST" th:object="${user}">
+                    <div class="form-group" th:if="${#fields.hasErrors('*')}">
+                        <div class="col-sm-4 col-sm-offset-4">
+                            <ul class="list-group">
+                                <li class="list-group-item list-group-item-danger"
+                                    th:each="err : ${#fields.errors('*')}"
+                                    th:text="${err}">Input is incorrect</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="form-group" th:classappend="${#fields.hasErrors('firstName')}? 'has-error'">
+                        <label class="control-label col-sm-3 col-sm-offset-1"
+                               for="firstName">Имя</label>
+                        <div class="col-sm-4">
+                            <input class="form-control"  type="text" th:field="*{firstName}" id="firstName" placeholder="Имя" />
+                        </div>
+                    </div>
+                    <div class="form-group" th:classappend="${#fields.hasErrors('lastName')}? 'has-error'">
+                        <label class="control-label col-sm-3 col-sm-offset-1" for="lastName">Фамилия</label>
+                        <div class="col-sm-4">
+                            <input class="form-control" type="text" th:field="*{lastName}" id="lastName" placeholder="Фамилия" />
+                        </div>
+                    </div>
+                    <div class="form-group" th:classappend="${#fields.hasErrors('telNumber')}? 'has-error'">
+                        <label class="control-label col-sm-3 col-sm-offset-1" for="telNumber">Телефон</label>
+                        <div class="col-sm-4">
+                            <input class="form-control" type="text" th:field="*{telNumber}" id="telNumber" placeholder="Телефон" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4 col-sm-offset-4">
+                            <input class="btn btn-block btn-info" type="submit" value="Подписаться" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
