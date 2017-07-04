@@ -23,6 +23,10 @@ public class AdminToolsService {
         this.adminBookRepo = adminBookRepo;
     }
 
+    public void saveBook(Book book) {
+        adminBookRepo.save(book);
+    }
+
     public void setTitle(Book book, String title){
         book = adminBookRepo.findByTitle(book.getTitle());
         book.setTitle(title);

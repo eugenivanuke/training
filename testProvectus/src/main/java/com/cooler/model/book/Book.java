@@ -29,9 +29,11 @@ public class Book implements Serializable {
     public Book(){}
 
     public Book(String title, String description, Author author, Genre genre, BigDecimal price) {
-        Set<Author> authors = new HashSet<Author>();
-        authors.add(author);
-        this.authorSet = authors;
+        this.setTitle(title);
+        this.setDescription(description);
+        authorSet.add(author);
+        genreSet.add(genre);
+        this.setPrice(price);
     }
 
     @Id

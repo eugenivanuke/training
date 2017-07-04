@@ -22,10 +22,16 @@ public class AdminToolsController {
         this.adminToolsService = adminToolsService;
     }
 
-    @RequestMapping(method = RequestMethod.GET, value = "/adminTools")
+    @RequestMapping(method = RequestMethod.GET, value = "/admintools")
     public String showAdminTools(Model model) {
         model.addAttribute(new Book());
-        return "adminTools";
+        return "admintools";
+    }
+
+    @RequestMapping(method = RequestMethod.POST, value = "/admintools")
+    public String saveBook(Book book) {
+        adminToolsService.saveBook(book);
+        return "booklist";
     }
 
 }
