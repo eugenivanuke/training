@@ -8,6 +8,7 @@ import javax.persistence.*;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
 /**
@@ -56,7 +57,7 @@ public class Book implements Serializable {
         this.description = description;
     }
 
-    @ManyToMany
+    @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(name = "book_author",
                 joinColumns = @JoinColumn(name = "book_id"),
                 inverseJoinColumns = @JoinColumn(name = "author_id"))
@@ -68,7 +69,7 @@ public class Book implements Serializable {
         this.authorSet = authorSet;
     }
 
-    @ManyToMany
+    @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(name = "book_genre",
                 joinColumns =  @JoinColumn(name = "book_id"),
                 inverseJoinColumns = @JoinColumn(name = "genre_id"))

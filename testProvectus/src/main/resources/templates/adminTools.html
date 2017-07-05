@@ -1,22 +1,31 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns="http://www.w3.org/1999/html">
 <head lang="en">
     <meta charset="UTF-8" />
     <title></title>
 </head>
 <body>
     <div>
-        <form method="POST" th:object="${book}">
-            <label>Title</label>:
-            <input type="text" th:field="*{title}" /><br/>
-            <label>Description</label>:
-            <input type="text" th:field="*{description}" /><br/>
-            <label>Author</label>:
-            <input type="text" th:field="*{authorSet}" /><br/>
-            <label>Genre</label>:
-            <input type="text" th:field="*{genreSet}" /><br/>
-            <label>Price</label>:
-            <input type="number" th:field="*{price}" />
+        <form method="POST">
+            <div th:object="${book}">
+                <label>Title</label>:
+                <input type="text" th:field="*{title}" /><br/>
+                <label>Description</label>:
+                <input type="text" th:field="*{description}" /><br/>
+                <label>Price</label>:
+                <input type="number" th:field="*{price}" /><br/>
+            </div>
+            <div th:object="${author}">
+                <label>Author Firstname</label>:
+                <input type="text" th:field="*{firstName}" /><br/>
+                <label>Author Lastname</label>:
+                <input type="text" th:field="*{lastName}" /><br/>
+            </div>
+            <div th:object="${genre}">
+                <label>Genre</label>:
+                <input type="text" th:field="*{genreName}" /><br/>
+            </div>
             <input type="submit" value="Add" />
         </form>
     </div>

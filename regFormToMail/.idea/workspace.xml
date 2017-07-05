@@ -2,25 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10d5f8e3-2f81-4e9d-bd7b-b71486770329" name="Default" comment="">
-      <change type="DELETED" beforePath="D:\dev\testProvectus\src\main\java\com\cooler\model\book\author\AuthorRepo.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\dev\testProvectus\src\main\java\com\cooler\model\book\genre\GenreRepo.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\dev\testProvectus\target\classes\com\cooler\model\book\author\AuthorRepo.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\dev\testProvectus\target\classes\com\cooler\model\book\genre\GenreRepo.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../testProvectus/target/classes/com/cooler/controller/AdminToolsController.class" afterPath="$PROJECT_DIR$/../testProvectus/target/classes/com/cooler/controller/AdminToolsController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../testProvectus/target/classes/com/cooler/service/AdminToolsService.class" afterPath="$PROJECT_DIR$/../testProvectus/target/classes/com/cooler/service/AdminToolsService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../testProvectus/target/classes/com/cooler/model/book/author/Author.class" afterPath="$PROJECT_DIR$/../testProvectus/target/classes/com/cooler/model/book/author/Author.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../testProvectus/target/classes/com/cooler/model/book/Book.class" afterPath="$PROJECT_DIR$/../testProvectus/target/classes/com/cooler/model/book/Book.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../testProvectus/target/classes/com/cooler/model/book/genre/Genre.class" afterPath="$PROJECT_DIR$/../testProvectus/target/classes/com/cooler/model/book/genre/Genre.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../testProvectus/src/main/java/com/cooler/controller/AdminToolsController.java" afterPath="$PROJECT_DIR$/../testProvectus/src/main/java/com/cooler/controller/AdminToolsController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../testProvectus/src/main/java/com/cooler/service/AdminToolsService.java" afterPath="$PROJECT_DIR$/../testProvectus/src/main/java/com/cooler/service/AdminToolsService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../testProvectus/src/main/java/com/cooler/model/book/author/Author.java" afterPath="$PROJECT_DIR$/../testProvectus/src/main/java/com/cooler/model/book/author/Author.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../testProvectus/src/main/java/com/cooler/model/book/Book.java" afterPath="$PROJECT_DIR$/../testProvectus/src/main/java/com/cooler/model/book/Book.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../testProvectus/src/main/java/com/cooler/model/book/genre/Genre.java" afterPath="$PROJECT_DIR$/../testProvectus/src/main/java/com/cooler/model/book/genre/Genre.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../testProvectus/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/../testProvectus/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../testProvectus/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/../testProvectus/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../testProvectus/.idea/vcs.xml" afterPath="$PROJECT_DIR$/../testProvectus/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../testProvectus/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../testProvectus/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="D:\dev\testProvectus\src\main\resources\templates\adminTools.html" afterPath="$PROJECT_DIR$/../testProvectus/src/main/resources/templates/admintools.html" />
+      <change type="MOVED" beforePath="D:\dev\testProvectus\target\classes\templates\adminTools.html" afterPath="$PROJECT_DIR$/../testProvectus/target/classes/templates/admintools.html" />
     </list>
     <ignored path="regFormToMail.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,10 +36,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="FormController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FormController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cooler/controller/FormController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6" vertical-offset="0" max-vertical-offset="850">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
               <caret line="39" column="62" selection-start-line="39" selection-start-column="62" selection-end-line="39" selection-end-column="62" />
               <folding />
             </state>
@@ -60,8 +49,18 @@
       <file leaf-file-name="formV2.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/formV2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.2692308" vertical-offset="204" max-vertical-offset="1088">
+            <state vertical-scroll-proportion="-1.3076923" vertical-offset="255" max-vertical-offset="1088">
               <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="form.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/form.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.061818182" vertical-offset="0" max-vertical-offset="825">
+              <caret line="3" column="70" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -205,8 +204,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -435,6 +432,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -793,15 +792,17 @@
       <workItem from="1499159264618" duration="653000" />
       <workItem from="1499161659151" duration="4790000" />
       <workItem from="1499181549131" duration="1239000" />
+      <workItem from="1499248584990" duration="26000" />
+      <workItem from="1499259917651" duration="577000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71170000" />
+    <option name="totallyTimeSpent" value="71773000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1036" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1196,13 +1197,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.061893202" vertical-offset="0" max-vertical-offset="824">
-          <caret line="3" column="70" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cooler/Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
@@ -1210,18 +1204,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cooler/controller/FormController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
+          <caret line="39" column="62" selection-start-line="39" selection-start-column="62" selection-end-line="39" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/formV2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.2692308" vertical-offset="204" max-vertical-offset="1088">
+        <state vertical-scroll-proportion="-1.3076923" vertical-offset="255" max-vertical-offset="1088">
           <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cooler/controller/FormController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6" vertical-offset="0" max-vertical-offset="850">
-          <caret line="39" column="62" selection-start-line="39" selection-start-column="62" selection-end-line="39" selection-end-column="62" />
+        <state vertical-scroll-proportion="0.061818182" vertical-offset="0" max-vertical-offset="825">
+          <caret line="3" column="70" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="70" />
           <folding />
         </state>
       </provider>

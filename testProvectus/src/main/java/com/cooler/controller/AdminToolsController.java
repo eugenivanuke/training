@@ -26,12 +26,16 @@ public class AdminToolsController {
 
     @RequestMapping(method = RequestMethod.GET, value = "/admintools")
     public String showAdminTools(Model model) {
-        model.addAttribute(adminToolsService.createBook());
+        model.addAttribute(new Book());
+        model.addAttribute(new Author());
+        model.addAttribute(new Genre());
         return "admintools";
     }
 
     @RequestMapping(method = RequestMethod.POST, value = "/admintools")
-    public String saveBook(Book book) {
+    public String saveBook(Book book, Author author, Genre genre) {
+        book.getAuthorSet().add(author);
+        book.getGenreSet().add(genre);
         adminToolsService.save(book);
         return "booklist";
     }
